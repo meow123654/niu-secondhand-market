@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f8f3">
+  <meta name="description" content="宜大拾物 — 讓好物在校園裡繼續發光。宜蘭大學校園二手交易平台。">
+  <title>宜大拾物 — 校園二手交易平台</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="features.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="宜大拾物首頁"><span class="brand-mark">拾</span><span>宜大<span class="brand-light">拾物</span><small>YILAN CAMPUS MARKET</small></span></a>
+    <nav class="main-nav" aria-label="主要導覽"><a class="nav-link active" href="#market">逛逛市集</a><a class="nav-link" href="#how">交易指南</a></nav>
+    <div class="top-actions"><button class="icon-btn favorite-nav" id="favorites-toggle" aria-label="查看收藏">♡ <span>收藏</span></button><button class="icon-btn message-nav" id="inbox-open" aria-label="查看訊息">▤ <span>訊息</span></button><button class="login-btn" id="login-open">登入 / 註冊</button><button class="avatar hidden" id="user-avatar" aria-label="使用者選單">U</button></div>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> 宜蘭大學限定・把好物留在校園</div><h1 id="hero-title">下一位主人，<br><em>可能就在隔壁。</em></h1><p>課本、宿舍小物、生活好物，讓閒置的物品遇見需要它的人。<br>校園面交更方便，讓每一次交換都剛剛好。</p><a class="hero-cta" href="#market">開始尋寶 <span>↘</span></a><div class="hero-proof"><div class="proof-avatars"><span>🌱</span><span>📚</span><span>☕</span></div><span>讓校園好物，繼續發光</span></div></div>
+      <div class="hero-art" aria-hidden="true"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-sun"></div><div class="art-tag tag-book">📚<span>好書接力</span></div><div class="art-tag tag-plant">🪴<span>再生好物</span></div><div class="art-note">GIVE IT<br>ANOTHER<br><b>CHANCE.</b></div><div class="art-ground"></div></div>
+      <div class="hero-stamp">NIU<br><span>·</span><br>MARKET</div>
+    </section>
+    <section class="market-section" id="market">
+      <div class="section-heading"><div><div class="eyebrow section-eyebrow">THE CAMPUS FINDS</div><h2>逛逛校園市集 <span class="heading-spark">✳</span></h2><p>每件好物，都值得遇見下一個喜歡它的人。</p></div><button class="sell-btn" id="sell-open"><span>＋</span> 刊登商品</button></div>
+      <div class="toolbar"><label class="search-box"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="搜尋課本、檯燈、生活好物..." aria-label="搜尋商品"><kbd>/</kbd></label><button class="filter-btn" id="filter-toggle">☷ <span>篩選</span></button><button class="my-listings-btn" id="my-listings-toggle">我的刊登 <span>↗</span></button></div>
+      <div class="filter-row" id="filter-row"><div class="category-list" id="category-list" role="group" aria-label="商品分類"></div><label class="sort-select">排序 <select id="sort-select" aria-label="商品排序"><option value="latest">最新上架</option><option value="price-low">價格由低到高</option><option value="price-high">價格由高到低</option></select></label></div>
+      <section class="department-board" aria-label="依科系逛市集"><div class="department-board-head"><div><span class="eyebrow">YOUR CAMPUS, YOUR BOARD</span><h3>依科系逛逛 <span>✳</span></h3></div><span class="department-hint">課本和好物，各系自己找</span></div><div id="department-list" class="department-list"></div></section>
+      <div class="result-line"><span id="result-count">正在載入商品…</span><button class="clear-filters hidden" id="clear-filters">清除篩選 ×</button></div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <div class="empty-state hidden" id="empty-state"><span>🧺</span><h3>這裡還沒有符合的好物</h3><p>換個關鍵字或分類，再找找看吧。</p><button id="empty-reset">清除條件</button></div>
+    </section>
+    <section class="how-section" id="how"><div class="how-title"><div class="eyebrow">SIMPLE & SAFE</div><h2>在校園，交易很簡單。</h2><p>不用等物流，從發現好物到安心交接，只要三步。</p></div><div class="steps"><article><span class="step-no">01</span><span class="step-icon">🔎</span><h3>找到喜歡的好物</h3><p>用關鍵字或分類，快速找到課本與生活用品。</p></article><article><span class="step-no">02</span><span class="step-icon">💬</span><h3>直接聯絡賣家</h3><p>查看商品資訊，透過賣家提供的方式聯絡。</p></article><article><span class="step-no">03</span><span class="step-icon">🤝</span><h3>相約校園面交</h3><p>約好時間地點，當面確認商品後完成交易。</p></article></div><div class="how-foot"><span>♻</span> 好物再流動，讓校園生活更永續。</div></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#top"><span class="brand-mark">拾</span><span>宜大<span class="brand-light">拾物</span><small>YILAN CAMPUS MARKET</small></span></a><span>為校園生活，留一點循環的空間。</span><span class="footer-copy">宜蘭大學校園二手平台・課程專題展示版</span></footer>
+  <div class="modal-backdrop hidden" id="modal-backdrop" role="presentation"><section class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" aria-label="關閉">×</button><div id="modal-content"></div></section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
