@@ -1,0 +1,10 @@
+{
+  "name": "宜大拾物｜校園二手平台",
+  "short_name": "宜大拾物",
+  "description": "宜蘭大學科系版二手商品、聊天與校園面交。",
+  "lang": "zh-Hant",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f8f3",
+  "theme_color": "#f7f8f3"
+}
